@@ -1,52 +1,90 @@
-/* General page styling */
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center;
-    padding: 20px;
     margin: 0;
-  }
-  
-  /* Heading styles */
-  h1 {
-    color: #2c3e50;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  
-  h2 {
-    color: #34495e;
-    margin-top: 30px;
-  }
-  
-  /* Project list styling */
-  ul {
-    list-style-type: none; /* Removes default bullets */
     padding: 0;
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
   }
   
-  li {
-    background-color: #fff;
-    margin: 10px auto;
-    padding: 15px;
-    border-radius: 8px;
-    max-width: 400px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
   }
   
-  /* Footer styling */
-  footer {
-    margin-top: 30px;
-    font-size: 0.9em;
-  }
-  
-  a {
-    color: #007acc;
+  /* Navigation Links */
+  nav a {
+    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
+    font-weight: bold;
   }
   
-  a:hover {
-    text-decoration: underline;
+  /* Contact Button */
+  .contact-btn {
+    background-color: #ffb400;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #e09e00;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  /* Rotating Circle Container */
+  .circle {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #00ffcc;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    animation: rotate 10s linear infinite;
+  }
+  
+  /* Profile Image Inside Circle */
+  .circle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+  }
+  
+  /* Icons Around the Circle */
+  .icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+  }
+  
+  /* Positioning Icons */
+  .icon:nth-child(2) { top: 10px; left: 50%; transform: translateX(-50%); }
+  .icon:nth-child(3) { top: 50%; right: 10px; transform: translateY(-50%); }
+  .icon:nth-child(4) { bottom: 10px; left: 50%; transform: translateX(-50%); }
+  .icon:nth-child(5) { top: 50%; left: 10px; transform: translateY(-50%); }
+  
+  /* Rotation Animation */
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
   }
   
