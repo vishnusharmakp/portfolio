@@ -1,46 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vishnu Sharma Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">Vishnu Sharma</div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="container">
+            <h1>Vishnu Sharma</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Publications</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <section class="main-content">
-    <div class="intro">
-      <h1>Introducing</h1>
-      <h2>Hello, I'm Vishnu Sharma</h2>
-      <p>I'm a Data Analyst with experience in SQL, Python, and Power BI, working in Device Protection and Risk Prevention.</p>
-      <a href="#contact" class="contact-btn">Contact Me</a>
-    </div>
+    <section class="intro">
+        <div class="container">
+            <div class="intro-text">
+                <h2>Hi, I'm Vishnu Sharma</h2>
+                <p>I'm a Data Analyst with experience in SQL, Python and PowerBI, working in Device Protection and Fraud.</p>
+                <a href="#" class="btn">Get In Touch</a>
+                <a href="#" class="btn">View Work</a>
+            </div>
+            <div class="intro-image">
+                <img src="images/profile.png" alt="Vishnu Sharma">
+            </div>
+        </div>
+    </section>
 
-    <div class="profile-photo">
-      <img src="images/profile.png" alt="Vishnu Sharma">
-    </div>
+    <section class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Master's in Data Science</h3>
+                <p>The University of Texas at Arlington (2021 - 2023)</p>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor's in Telecommunication Engineering</h3>
+                <p>Dayananda Sagar College of Engineering (2017 - 2021)</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="skills">
-      <div class="skill-item"><img src="images/python-icon.png" alt="Python"></div>
-      <div class="skill-item"><img src="images/sql-icon.png" alt="SQL"></div>
-      <div class="skill-item"><img src="images/powerbi-icon.png" alt="PowerBI"></div>
-      <div class="skill-item"><img src="images/python-icon.png" alt="Python"></div>
-    </div>
-  </section>
+    <section class="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <div class="publication-item">
+                <h3>Sustainability Assessment for Green Building and Retrofitting</h3>
+                <p>Published in ASEE GSW, 2023</p>
+                <a href="#">Read Paper</a>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <a href="#contact" class="contact-btn">Contact Me</a>
-  </footer>
+    <section class="work-experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+                <h3>Data Analyst</h3>
+                <p>Likewize (2022 - Present)</p>
+                <p>Leading data analysis initiatives and developing predictive models to drive business decisions.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Graduate Research Assistant</h3>
+                <p>The University of Texas at Arlington (2022 - 2023)</p>
+                <p>Developed and implemented machine learning models for customer segmentation and prediction.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form action="#">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 All rights reserved</p>
+            <div class="social-icons">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">Medium</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
